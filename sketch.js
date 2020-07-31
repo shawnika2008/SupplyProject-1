@@ -16,7 +16,7 @@ function setup() {
 	rectMode(CENTER);
    
 	var package_option ={
-		restitution: 0.01
+		restitution: 0.2
 	}
 
 	packageSprite=createSprite(width/2, 80, 10,10);
@@ -34,7 +34,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:3, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.1, isStatic:true});
 	World.add(world, packageBody);
 	console.log(packageBody);
 
